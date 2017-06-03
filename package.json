@@ -1,0 +1,106 @@
+{
+    "author": "\u00d3scar Gonz\u00e1lez Ossorio",
+    "dependencies": {},
+    "keywords": [],
+    "name": "c.d.-fabero",
+    "pebble": {
+        "capabilities": [
+            "location",
+            "configurable"
+        ],
+        "displayName": "C.D. Fabero",
+        "enableMultiJS": false,
+        "messageKeys": {
+            "KEY_CONDITIONS": 1,
+            "KEY_FREQUENCY_UPDATE_WEATHER": 2,
+            "KEY_TEMPERATURE": 0
+        },
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/icono-bluetooth-Fabero.bmp",
+                    "name": "ICONO_BLUETOOTH",
+                    "targetPlatforms": [
+                        "aplite",
+                        "basalt",
+                        "chalk",
+                        "diorite"
+                    ],
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/escudo-Fabero-lista-esferas.bmp",
+                    "menuIcon": true,
+                    "name": "ESCUDO_LISTA_ESFERAS",
+                    "targetPlatforms": [
+                        "aplite",
+                        "basalt",
+                        "chalk",
+                        "diorite"
+                    ],
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/escudo-Fabero.bmp",
+                    "name": "ESCUDO_FABERO",
+                    "targetPlatforms": [
+                        "aplite",
+                        "basalt",
+                        "chalk",
+                        "diorite"
+                    ],
+                    "type": "bitmap"
+                },
+                {
+                    "characterRegex": "[A-Za-z0-9\u00e1\u00e9\u00ed\u00f3\u00fa ]",
+                    "file": "fonts/font3.ttf",
+                    "name": "FONT_DATE_11",
+                    "targetPlatforms": [
+                        "aplite",
+                        "basalt",
+                        "chalk",
+                        "diorite"
+                    ],
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[0-9 -]",
+                    "file": "fonts/font2.ttf",
+                    "name": "FONT_TIME_42",
+                    "targetPlatforms": [
+                        "aplite",
+                        "basalt",
+                        "chalk",
+                        "diorite"
+                    ],
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[0-9\u00b0CF -]",
+                    "file": "fonts/font1.ttf",
+                    "name": "FONT_TEMPERATURE_21",
+                    "targetPlatforms": [
+                        "aplite",
+                        "basalt",
+                        "chalk",
+                        "diorite"
+                    ],
+                    "type": "font"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk",
+            "diorite"
+        ],
+        "uuid": "075d7daa-41ba-4985-8568-bd0054a5937f",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}
