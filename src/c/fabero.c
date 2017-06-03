@@ -164,7 +164,7 @@ static void main_window_load(Window *window) {
   char x_offset_date_layer = PBL_IF_ROUND_ELSE(bounds.size.w - 62, bounds.size.w - 64);
   char y_offset_date_layer = PBL_IF_ROUND_ELSE((bounds.size.h / 2) - 12 , bounds.size.h - 15);
   char x_offset_weather_layer = PBL_IF_ROUND_ELSE(bounds.size.w - 63, bounds.size.w - 54);
-  char y_offset_weather_layer = PBL_IF_ROUND_ELSE((bounds.size.h / 2), (bounds.size.h / 2) - 22);
+  char y_offset_weather_layer = PBL_IF_ROUND_ELSE((bounds.size.h / 2) + 16, (bounds.size.h / 2) - 22);
   GColor color_red = GColorFromHEX(0xcc0000);
   static char lastWeatherBuffer[32] = "--";
   persist_read_string(KEY_LAST_WEATHER_BUFFER, lastWeatherBuffer, 32);
@@ -264,7 +264,7 @@ static void main_window_load(Window *window) {
   s_bitmap_bt = gbitmap_create_with_resource(RESOURCE_ID_ICONO_BLUETOOTH);
 
   // Create the BitmapLayer to display the GBitmap
-  s_layer_bt = bitmap_layer_create(GRect(PBL_IF_ROUND_ELSE(22, 8), PBL_IF_ROUND_ELSE(bounds.size.h / 2, (bounds.size.h / 2) - 22), 24, 24));
+  s_layer_bt = bitmap_layer_create(GRect(PBL_IF_ROUND_ELSE(22, 8), PBL_IF_ROUND_ELSE((bounds.size.h / 2) + 16, (bounds.size.h / 2) - 22), 24, 24));
   bitmap_layer_set_bitmap(s_layer_bt, s_bitmap_bt);
   bitmap_layer_set_compositing_mode(s_layer_bt, GCompOpSet);
   bitmap_layer_set_alignment(s_layer_bt, GAlignLeft);
